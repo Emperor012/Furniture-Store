@@ -1,0 +1,53 @@
+/* ====== Màn hình desktop và tablet xoay ngang ====== */
+@media screen and (max-width: 1278px){
+
+}
+
+/* ====== Màn hình mobile xoay ngang ====== */
+@media screen and (max-width: 769px){
+
+    
+    .top-bar .col-8{
+        width: 100%;
+    }
+
+    .top-bar .col-4{
+        display: none;
+    }
+    
+    .top-bar ul li{
+        display: none;
+    }
+
+    .lang{
+        display: none;
+        justify-content: center;
+    }
+
+    .wrap-language
+    {
+        width: 0;
+    }
+
+    .menu-topbar{
+        width: 100%;
+    }
+
+    .top-bar .menu-topbar ul{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* display phone */
+    .top-bar .menu-topbar ul li:first-child{
+        display: block;
+    }
+
+    .header-main .col-12:first-child{
+        display: block;
+    }
+
+    .header-main .col-12:nth-child(2){
+        display: none;
+    }
+}
