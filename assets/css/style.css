@@ -1,6 +1,11 @@
 /* Common./Start  */
+@font-face {
+    font-family: mont;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
 body{
-    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -26,6 +31,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+    text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -99,7 +105,7 @@ body .container{
     border-radius: 100%;
     overflow: hidden;
     object-fit: cover;
-    margin-right: 8px;
+    margin: 4px;
 }
 
 .lang {
@@ -125,7 +131,6 @@ body .container{
 }
 
 .menu-topbar ul li a ,.wrap-navbar-right  ul li a{
-    text-decoration: none;
     color: #698299;
     font-size: 14px;
 }
@@ -147,6 +152,34 @@ body .container{
 
 
 /* Header-main./Start */
+.header-main {
+    height: 90px;
+    align-items: center;
+}
+
+.header-main .wrap-menu-header{
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.header-main .wrap-nav-header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-menu-header .wrap-navbar-right ul li{
+    display: none;
+}
+
+/* Header-main wrap-menu-header ./Start */
+.header-main .wrap-menu-header a{
+    margin:0 20px;
+}
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -162,7 +195,6 @@ body .container{
 
   .sidebar a {
     padding: 8px 8px 8px 32px;
-    text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -194,4 +226,557 @@ body .container{
     transition: margin-left .5s;
     padding: 16px;
   }
+  
+/* Header-main wrap-menu-header ./End */
+
+
+/* Header-main nav ./Start */
+
+.wrap-nav-header ul li{
+    margin:0 6px;
+} 
+.wrap-nav-header ul li a{
+    font-size: 15px;
+    padding: 0px;
+    color: #303036;
+} 
+
+.wrap-nav-header ul li a:hover{
+    color: #dd9933;
+}
+
+.wrap-nav-header ul li a .svg-inline--fa{
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.wrap-nav-header ul li ::after{
+    display: none;
+} 
+
+.wrap-search{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 99px 0 0 99px;
+    outline: none;
+    padding: 10px 0px 10px 25px;
+    font-size: 14px;
+  }
+  
+  .searchButton {
+    width: 50px;
+    height: 40px;
+    background: #f7f7f7;
+    color: #ccc;
+    text-align: center;
+    border: none;
+    border-radius: 0 99px 99px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+/* Header-main nav ./End */
+
 /* Header-main./End */
+
+/* Banner.Start */
+.banner-common{
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    /* Ảnh trên các kích thước luôn hiển thị hoàn hảo */
+    background-size: cover;    
+}
+
+.banner-bordeaux{
+    background-image: url("../images/great-room-ideas-alexander.jpg ");  
+}
+
+.banner-marseille{
+    background-image: url("../images/interior-parihar-constructions.jpg");        
+}
+
+.banner-addition-1{
+    margin-top: 100px;
+    background-image: url("../images/hang-trang-tri-micheal-aram.jpg");      
+}
+
+.banner-addition-2{
+    background-image: url("../images/giuong-iris-dep-gia-tot-hoc-keo.jpg");      
+}
+
+.banner-addition-address{
+    background-image: url("../images/cua-hang-nha-xinh.jpg");      
+}
+
+.box-content{
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 2200px 0 0 0 rgba(0, 0, 0, 0.3);
+    position: relative;     
+}
+
+.box-promo-title{
+    width: 60%;
+    height: 200px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner-addition-1 .box-promo-title{
+    top: 32%;
+}
+
+.banner-addition-2 .box-promo-title{
+    top: 32%;
+}
+
+.banner-addition-2 .box-promo-title{
+    top: 42%;
+}
+
+.box-promo-title h1{
+    font-size: 2.4em;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: mont;
+}
+
+.banner-addition-1 .box-promo-title h1{
+    font-size: 3.8em;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: mont;
+}
+
+
+.banner-addition-2 .box-promo-title h1{
+    font-size: 3.2em;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: mont;
+}
+
+
+/* .banner-addition-address */
+
+.banner-addition-address
+{
+    height: 700px;
+}
+
+.banner-addition-address .box-content {
+    box-shadow: inset 2200px 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.banner-addition-address .box-promo-title {
+    top: 82%;
+}
+
+.banner-addition-address .box-promo-title h1{
+    font-size: 3.6em;
+}
+
+
+/* .banner-addition-address */
+
+.box-content p{
+    font-size: 1em;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 0 36px 20px;
+    display: block;
+    margin: auto;
+}
+
+.box-content a{
+    font-size: 1em;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d26e4b;
+    padding: 14px 20px;
+    display: block;
+    width: 180px;
+    margin: auto;
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 8px;
+    border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #fbaf1a;
+}
+/* Banner./End */
+
+/* room-category.Start */
+.catalog-by-room
+{
+    margin-top: 60px;
+}
+
+.catalog-by-room h2
+{    
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0A0A0B;
+    padding:0 0 16px 0;
+    font-family: mont;
+}
+
+.catalog-by-room p
+{    
+    font-size: 14px;
+    line-height: 24px;
+    color: #303036;
+    padding-bottom: 12px;
+}
+
+.catalog-by-room a
+{    
+    color: #A9A9B2;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.catalog-by-room a i ::after{
+    display: none;
+} 
+
+.catalog-by-room a i .svg-inline--fa{
+   margin-left: 2px;
+} 
+
+.living-room .room-desc , .decorations .room-desc{
+    display: none;
+}
+
+.living-room a{
+    width: 100%;
+    display: block;
+}
+
+.living-room a img{
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.wrap-decorations{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.wrap-decorations .wrap-room-desc{
+    width: 40%;
+}
+
+
+.wrap-decorations .decorations{
+    width: 60%;
+}
+
+.wrap-decorations .decorations img{
+    width: 100%;
+}
+
+.decorations{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.decorations .box-promo-title
+{
+    display: none;
+}
+
+.decorations a{
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+}
+
+.decorations img{
+    width: 90%;
+    height: 90%;
+}
+
+.wrap-decorations .room-desc:nth-child(1){
+    position: absolute;
+    width: 33%;
+    height: 50%;
+    left: 3%;
+}
+
+.wrap-decorations .room-desc:nth-child(2){
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 33%;
+    height: 50%;
+
+    padding: 10px;
+}
+
+.wrap-bedroom{
+    margin-top: 100px;
+    width: 100%;
+
+    display: flex;
+}
+
+.wrap-bedroom .bedroom-link{
+    width: 50%;
+    margin:0 8%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrap-bedroom .room-desc{
+    width: 30%;
+}
+
+.wrap-bedroom a img{
+    width: 100%;
+
+    display: flex;
+}
+
+/* bedroom */
+
+/* dinning room */
+.wrap-dinningroom{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.wrap-dinningroom .dinningroom-link img{
+    width: 70%;
+    margin:-12% 10% 0 10%;
+}
+
+.wrap-dinningroom .room-desc{
+    width: 70%;
+    margin:40px 10% 0 10%;
+}
+
+/* dinning room */
+
+/* list-new-product  */
+
+.list-new-product{
+    margin: 100px 24px;
+    /* background-color: #A9A9B2; */
+}
+
+.list-title{
+    width: 100%;
+    margin-bottom: 40px;
+
+    display: flex;
+
+    border-bottom: 1px solid #ececec ;
+}
+
+.list-title h2{
+    font-size: 24px;
+    font-family: mont;
+    line-height: 40px;
+    border-bottom: 2px solid #ddd ;
+}
+
+
+.list-title a{
+    font-size: 14px;
+    line-height: 40px;
+    padding-left:20px;
+    color: #0A0A0B;
+}
+
+.list-title a .svg-inline--fa{
+    padding-left: 4px;
+}
+
+.wrap-product{
+    height:360px;
+}
+
+.wrap-product a{
+    color: #0A0A0B;
+}
+
+.wrap-product a .product-img{
+    width: 100%;
+    display: block;
+    /* margin: 0 24px; */
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.wrap-product a .product-img-alter{
+    width: 100%;
+    display: none;
+    /* margin: 0 24px; */
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.wrap-product a .name{
+    color: #0A0A0B;
+    font-size: 14px;
+    padding: 24px 24px 0 24px;
+}
+
+.wrap-product a .price{
+    color: #0A0A0B;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: end;
+    padding: 24px;
+}
+
+.wrap-product .add-to-cart{
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    margin-left: 24px;
+    border: 1px solid #000;
+    background-color: white;
+    display: none;
+}
+
+.wrap-product .add-to-cart:hover{
+    background-color: #000;
+    color: white;
+}
+
+.wrap-product:hover .add-to-cart{
+    display: block;
+}
+
+.wrap-product:hover a .product-img{
+    src: url(../images/sofa-square-1.jpg);
+}
+
+.wrap-product:hover a .product-img{
+    display: none;
+}
+
+.wrap-product:hover a .product-img-alter{
+    display: block;
+}
+
+/* list-new-product  */
+
+
+/* footer */
+.footer{
+    background-color: #303036;
+}
+
+.footer a ,.footer h1, .footer p {
+    color: white;
+}
+
+.wrap-footer-item{
+    margin: 40px 24px;
+}
+
+.footer-item-title{
+    font-weight: bold;
+    margin: 48px 0 0 0;
+}
+
+.footer-item-content{
+    margin: 48px 0 0 0;
+}
+
+.wrap-footer-item ul li{
+    margin: 12px 0;
+}
+
+.wrap-footer-item ul li a ,.wrap-footer-item ul li p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.follow-us-chain{
+    border: 1px solid white;
+    padding: 8px;
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.footer-email-signup{
+    display: flex;
+    width: auto;
+}
+
+.footer-email-signup input[type="text"]{
+    background-color: #59595e;
+    color: white;
+    width: 160px;
+    padding: 8px;
+    border: #000;
+    outline:none;
+}
+
+.footer-email-signup input[type="text"]::placeholder{
+    color: white;
+}
+
+.footer-email-signup input[type="submit"]{
+    background-color: #0a0a0b;
+    color: white;
+    padding: 8px;
+    margin-right: 24px;
+}
+
+.wrap-license{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.wrap-license p{
+    font-size: 14px;
+    width: 100%;
+    color: #abb8c3;
+    line-height: 20px;
+    text-align: center;
+    padding: 40PX;
+}
+
+/* footer */
