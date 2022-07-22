@@ -26,6 +26,13 @@
         width: 100px;
     }
     /* footer */
+
+    
+    .banner-living-room .box-promo-title {
+        top: 92%;
+        height: auto;
+        left: 50%;
+    }
 }
 
 @media screen and (max-width: 991px){
@@ -46,8 +53,34 @@
 
     .footer-email-signup input[type="submit"]{
         width: 60px;
-    }}
+    }
     /* footer */
+
+    /* sofa-category */
+    .sofa-category-filter .dropdown{
+        margin-top: 32px;
+    }
+
+    .wrap-filter-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .wrap-filter-btn button{
+        background-color: #000;
+        color: white;
+        padding: 12px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .wrap-filter-btn .btn{
+        text-align: start;
+    }
+
+    /* sofa-category */
 }
 
 @media screen and (max-width: 899px){
@@ -55,6 +88,12 @@
     .banner-addition-1 .box-promo-title h1 {
         font-size: 3.4em;
     }
+
+    
+    .banner-living-room  .box-promo-title h1 {
+        font-size: 2em;
+    }
+
     /* banner */
 
     /* footer */
@@ -62,6 +101,17 @@
         width: 60px;
     }
     /* footer */
+
+    /* living-room */
+    .wrap-room-type{
+        display:block;
+    }
+
+    .room-type{
+        width: 99%;
+    }
+    /* living-room */
+    
 }
 
 /* ====== Màn hình mobile xoay ngang ====== */
@@ -292,9 +342,36 @@
         margin: 40px 20px;
     }
 
-/* dinning room */
+    
 
+    /* dinning room */
     /* catalog by room */
+
+    /* sofa-category */
+    .sofa-category-filter .dropdown{
+        margin-top: 32px;
+    }
+
+    .wrap-filter-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .wrap-filter-btn button{
+        background-color: #000;
+        color: white;
+        padding: 12px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .wrap-filter-btn .btn{
+        text-align: start;
+    }
+
+    /* sofa-category */
 }
 
 @media screen and (max-width: 575px){
