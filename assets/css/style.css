@@ -1198,7 +1198,7 @@ body .container{
 
 .discount-code button{
     width: 39%;
-    padding: 8px 8px 12px 8px;
+    padding: 8px 8px 8px 8px;
     text-transform: uppercase;
     background-color: #000;
     color: white;
@@ -1369,6 +1369,229 @@ body .container{
 /* #endregion */
 
 
-/* #region name */
+/* #region Payment-order */
+.user-payment-info{
+    margin: 40px 40px 60px 40px;
+}
 
+.user-payment-info label
+{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.payment-address-title{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: mont;
+    padding: 0 0 16px 0;
+}
+
+.user-payment-contact{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-payment-phone{
+    width: 48%;
+}
+
+.user-payment-email{
+    width: 48%;
+}
+
+.user-payment-address{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-payment-province{
+    width: 48%;
+}
+
+.user-payment-district{
+    width: 48%;
+}
+
+.wrap-payment-infos{
+    border: 1px solid #ececec;
+    margin: 40px 0 60px 0px;
+}
+
+
+.wrap-payment-infos .payment-title{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    padding: 32px;
+
+}
+
+.product-payment-title{
+    font-size: 18px;
+    margin:0 32px 32px 32px;
+    border-bottom: 1px solid #ececec;
+    padding: 12px 0;
+}
+
+.wrap-product-payment .payment-infos{
+    display: flex;
+    margin-top: 20px;
+}
+
+.wrap-product-payment .product-payment-img{
+    width: 25%;
+}
+
+.product-payment{  
+    margin: 0px 32px;
+    width: 75%;
+}
+
+.product-payment-info{
+    margin: 20px 0px 20px 0px;
+}
+
+.product-payment-quantity{
+    width: auto;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-payment-total{
+    width: auto;
+    font-size: 14px;
+}
+
+.product-payment-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap-product-payment .product-payment-img img{
+    width: 100%;
+}
+
+.payment-prize , .payment-total{
+    display: flex;
+    margin: 32px 32px 0 32px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    padding: 12px 0;
+}
+
+.payment-prize-title , .payment-ship-title,.payment-total-title { 
+    font-size: 18px;
+}
+
+.payment-prize-money , .payment-total-money {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.payment-ship{
+    display: flex;
+    margin: 40px 32px 0 32px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    padding: 12px 0;
+}
+
+.payment-ship-money {
+    font-size: 18px;
+}
+
+.comfirm-payment{
+    margin: 32px 32px 0 32px;
+    display: flex;
+}
+
+.comfirm-payment .form-check-input {
+    padding: 8px;
+    margin: 0px 16px 12px 0px;
+}
+
+.comfirm-payment .form-check-input:hover{
+    cursor: pointer;
+}
+
+.payment-purchasing{
+    margin-top: 32px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.user-payment-info label{
+ width: 100%;
+}
+
+.obligatory-field{
+    color: red;
+}
+
+.user-payment-contact{
+    display: flex;
+}
+
+.user-address{
+    margin-top: 20px;
+}
+
+.user-more-title{    
+    font-weight: bold;
+    font-size: 20px;
+    font-family: mont;
+    padding: 20px 0 16px 0;
+}
+
+.wrap-user-note label{
+    font-weight: bold;
+}
+
+.wrap-user-note textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ececec;
+    padding: 12px;
+}
+
+.payment-mathod{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.method-bank{
+    width: 48%;
+    padding:30px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid black;
+}
+
+
+.method-upon-delevery{
+    width: 48%;
+    padding:30px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #ececec;
+}
+
+.method-bank .svg-inline--fa,.method-upon-delevery .svg-inline--fa{
+    padding:12px 0 ;
+    font-size: 28px;
+}
+
+.bank-number ,.bank-owner-title, .bank-owner-name{
+    padding: 12px 0;
+    font-size: 14px;
+}
 /* #endregion */

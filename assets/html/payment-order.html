@@ -13,10 +13,12 @@
       href="../images/pngtree.jpg"
     />
 
-    
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- bootstrap css core -->
     <link
@@ -160,8 +162,8 @@
 
               <button class="openbtn" onclick="openNav()">☰</button>
 
-              <a href="../../index.html"
-                ><img src="../images/logo-nha-xinh-moi.png" alt=""
+              <a href="../../index.html">
+                  <img src="../images/logo-nha-xinh-moi.png" alt=""
               /></a>
 
               <div class="wrap-navbar-right">
@@ -255,377 +257,242 @@
 
     <!-- #endregion  -->
 
-    <div class="wrap-breadcrumb">
-      <div class="container">
-        <div class="row">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-              <li class="breadcrumb-item"><a href="#">Phòng khách</a></li>
-              <li class="breadcrumb-item"><a href="#">Sofa</a></li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
+    <!-- Cart-content -->
 
-    <div class="wrap-product-detail">
+    <!-- Cart-content -->
+
+    <div class="wrap-cart-content">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-6">
-              <div class="product-img">
-                  <img src="../images/sofa-penny-3-cho-dacognac-1.jpg" alt="">
-              </div>
+          <div class="col-12 col-sm-6 col-md-7">
+            <div class="user-payment-info">
+                <form action="" class="user-payment-form"></form>
+                    <h1 class="payment-address-title">
+                        ĐỊA CHỈ GIAO HÀNG
+                    </h1>
+
+                    
+                    <label class="form-label">Họ và tên 
+                        <span class="obligatory-field">*</span>
+                    </label>
+                    <input type="text" class="form-control" 
+                    placeholder="Nhập họ và tên " name="uname">
+
+                    <div class="user-payment-contact">
+                        <div class="user-payment-phone">
+                            <label class="form-label">Số điện thoại  
+                                <span class="obligatory-field">*</span>
+                            </label>
+                            <input type="text" class="form-control" 
+                            placeholder="Nhập số điện thoại của bạn" name="uname" >
+                        </div>
+                        
+                        <div class="user-payment-email">
+                            <label class="form-label">Địa chỉ email  
+                                <span class="obligatory-field">*</span>
+                            </label>
+                            <input type="text" class="form-control" 
+                            placeholder="Nhập email" name="uname" >
+                        </div>
+                    </div>
+
+                    
+                    <div class="user-payment-address">
+                        <div class="user-payment-province">
+                            <label class="form-label">Tỉnh / Thành phố   
+                                <span class="obligatory-field">*</span>
+                            </label>
+                            <div class="user-province">
+                                <select class="form-control user-arrow" id="sel1">
+                                  <option>Hà Nội</option>
+                                  <option>Tp Hồ Chí Minh</option>
+                                  <option>Bắc Ninh</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="user-payment-district">
+                            <label class="form-label">Quận / Huyện  
+                                <span class="obligatory-field">*</span>
+                            </label>
+                            <select class="form-control" id="sel1">
+                                <option>Bắc Từ Liêm</option>
+                                <option>Nam Từ Liêm</option>
+                                <option>Ba Đình</option>
+                                <option>Cầu Giấy</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="user-address">
+                        <label class="form-label">Địa chỉ 
+                            <span class="obligatory-field">*</span>
+                        </label>
+                        <input type="text" class="form-control" 
+                        placeholder="Nhập họ và tên " name="uname">
+                    </div>
+
+
+
+                    <h1 class="user-more-title">
+                        THÔNG TIN THÊM
+                    </h1>
+
+                    <div class="wrap-user-note">
+                        <label class="form-label">
+                            Lưu ý cho đơn hàng (tuỳ chọn)
+                        </label>
+
+                        <textarea name="" id="" cols="72" rows="10" 
+                        placeholder="Viết lưu ý cho đơn hàng của bạn">
+
+                        </textarea>
+                    </div>
+
+                    <h1 class="user-more-title">
+                        PHƯƠNG THỨC THANH TOÁN
+                    </h1>
+
+                    <div class="payment-mathod">
+
+                        <button class="method-bank">
+                            <i class="fa-solid fa-money-check"></i><br>
+                            Chuyển khoản ngân hàng</button>
+
+                        <button class="method-upon-delevery">
+                            <i class="fa-solid fa-truck-ramp-box"></i><br>
+                            Thanh toán khi nhân hàng</button>
+                    </div>
+
+                    <div class="method-detail">
+                        <h1 class="user-more-title">
+                            Ngân hàng Vietcombank
+                        </h1>
+
+                        <p class="bank-number">
+                            Số tài khoản : 0071000745809
+                        </p>
+
+                        <p class="bank-owner-title">
+                            Tên chủ tài khoản:
+                        </p>
+                        
+                        <p class="bank-owner-name">
+                            CT CP NOI THAT AKA VIETCOMBANK – CHI NHÁNH TP.HCM.
+                        </p>
+                    </div>
+                </form>
+            </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-6">
-            <div class="wrap-product-infos">
-              <h1 class="product-name">Sofa 3 chỗ PENNY – DA 508MB</h1>
+          <div class="col-12 col-sm-6 col-md-5">
+            <div class="wrap-payment-infos">
+              <h1 class="payment-title">Tóm tắt đơn hàng</h1>
 
-              <p class="product-prize">61,860,000₫</p>
+              <div class="wrap-product-payment">
+                <h1 class="product-payment-title">Sản phẩm</h1>
 
-              <div class="product-infos">
-                <ul>
-                  <li>
-                    <p class="product-size">
-                      Kích thước
-                      <span class="product-size-info">
-                        D2400 - R880 - C850
-                      </span>
+                <div class="payment-infos">
+                  <div class="product-payment-img">
+                    <img
+                      src="../images/cart-TU-LY-BARBIER-WALNUT-410043Z-1-300x200.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="product-payment">
+                    <p class="product-payment-name">
+                      Tủ Ly Barbier Walnut 410043Z
                     </p>
-                  </li>
 
-                  <li>
-                    <p class="product-material">
-                      Vật liệu
-                      <span class="product-material-info">
-                        Chân kim loại sơn, nệm bọc da tự nhiên, nệm ngồi & lưng
-                        rời
-                      </span>
-                    </p>
-                  </li>
+                    <div class="product-payment-info">
+                      <div class="product-payment-quantity">
+                        <i class="fa-solid fa-xmark"></i> 1
+                      </div>
 
-                  <li>
-                    <p class="product-code">Mã: 3*105072</p>
-                  </li>
-
-                  <li>
-                    <p class="prodcut-cate-link">
-                      Danh mục: <a href="#"> Phòng khách</a>,
-                      <a href="#">Sofa</a>
-                    </p>
-                  </li>
-
-                  <li>
-                    <p class="prodcut-filter-link">
-                      Tags: <a href="#"> 3 chỗ</a>, <a href="#">Da</a> ,
-                      <a href="#">Kim loại</a>
-                    </p>
-                  </li>
-
-                  <li>
-                    <p class="product-available"> Có hàng</p>
-                  </li>
-                  
-                  <li>
-                    <button class="add-to-cart">Thêm vào giỏ</button>
-                  </li>
-                </ul>
-
-                <div class="more-info">
-                  <ul class="nav nav-tabs">
-                    <li class="active">
-                      <a data-toggle="tab" href="#menu0">Đánh giá</a>
-                    </li>
-                    <li><a data-toggle="tab" href="#menu1">Bảo hành</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Vận chuyển</a></li>
-                  </ul>
-
-                  <div class="tab-content">
-                    <div id="menu0" class="product-rate tab-pane active">
-                      <p>
-                        Chưa có bài đánh giá nào
-                      </p>
-
-                      <div class="product-rating">
-                          <p>
-                            Viết đánh giá cho "Sofa 3 chỗ PENNY – DA 508MB"
-                          </p>
-
-                          <p><a href="#">Đăng nhập để đánh giá</a></p>
+                      <div class="product-payment-total">
+                        <p>49,690,000₫</p>
                       </div>
                     </div>
-                    <div id="menu1" class="tab-pane">
-                      <h3>Menu 1</h3>
-                      <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                    </div>
-                    <div id="menu2" class="tab-pane">
-                      <h3>Menu 2</h3>
-                      <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam.
-                      </p>
-                    </div>
+                  </div>
+                </div>
+
+                <div class="payment-infos">
+                  <div class="product-payment-img">
+                    <img
+                      src="../images/cart-ghe-an-peak-mau-xanh-1-300x200.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="product-payment">
+                    <p class="product-payment-name">
+                      Tủ Ly Barbier Walnut 410043Z
+                    </p>
+
+                    <div class="product-payment-info">
+                      <div class="product-payment-quantity">
+                        <i class="fa-solid fa-xmark"></i> 1
+                      </div>
+
+                      <div class="product-payment-total">
+                        <p>49,690,000₫</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div class="payment-prize">
+                <div class="payment-prize-title">
+                  <p>Thành tiền</p>
+                </div>
+
+                <div class="payment-prize-money">
+                  <p>54,590,000₫</p>
+                </div>
+              </div>
+
+              <div class="payment-ship">
+                <div class="cart-ship-title">
+                  <p>Vận chuyển</p>
+                </div>
+
+                <div class="payment-ship-money">
+                  <p>Liên hệ phí vận chuyển sau</p>
+                </div>
+              </div>
+
+              <div class="payment-total">
+                <div class="payment-total-title">
+                  <p>Tổng cộng</p>
+                </div>
+
+                <div class="payment-total-money">
+                  <p>54,590,000₫</p>
+                </div>
+              </div>
+
+              <div class="comfirm-payment">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="myCheck"
+                  name="remember"
+                  
+                />
+                <label class="form-check-label" for="myCheck">
+                  Tôi đã đọc và đồng ý điều kiện đổi trả hàng, giao hàng, chính
+                  sách bảo mật, điều khoản dịch vụ mua hàng online *
+                </label>
+              </div>
+
+              <button class="payment-purchasing">Đặt mua</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- list-new-product -->
-    <div class="list-new-product">
-      <div class="container">
-        <div class="list-title">
-            <h2>Có thể bạn cũng thích</h2>
-        </div>  
-
-        <div class="row">
-          <div class="col-12 col-sm-4 col-md-3">
-            <div class="wrap-product">
-              <a href="#">
-                <img src="../images/sofa-osaka-3-cho.jpg" class="product-img" />
-                <img
-                  src="../images/sofa-osaka-3-cho-2.jpg"
-                  class="product-img-alter"
-                />
-                <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                <p class="price">146,430,000₫</p>
-              </a>
-
-              <button class="add-to-cart">Thêm vào giỏ</button>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-4 col-md-3">
-            <div class="wrap-product">
-              <a href="#">
-                <img
-                  src="../images/sofa-3-cho-boc-da-penny-mau-be-1jpg.jpg"
-                  class="product-img"
-                />
-                <img
-                  src="../images/sofa-3-cho-boc-da-penny-mau-be-2.jpg"
-                  class="product-img-alter"
-                />
-                <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                <p class="price">6,430,000₫</p>
-              </a>
-
-              <button class="add-to-cart">Thêm vào giỏ</button>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-4 col-md-3">
-            <div class="wrap-product">
-              <a href="#">
-                <img
-                  src="../images/sofa-penny-3-cho-vai-xanh.jpg"
-                  class="product-img"
-                />
-                <img
-                  src="../images/sofa-square-1.jpg"
-                  class="product-img-alter"
-                />
-                <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                <p class="price">14,420,000₫</p>
-              </a>
-
-              <button class="add-to-cart">Thêm vào giỏ</button>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-4 col-md-3">
-            <div class="wrap-product">
-              <a href="#">
-                <img
-                  src="../images/sofa-penny-3-cho-vai-cam.jpg"
-                  class="product-img"
-                />
-                <img
-                  src="../images/sofa-penny-vai-cam-2.jpg"
-                  class="product-img-alter"
-                />
-                <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                <p class="price">5,430,000₫</p>
-              </a>
-
-              <button class="add-to-cart">Thêm vào giỏ</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- list-new-product -->
-
-    <div class="list-new-product">
-        <div class="container">
-          <div class="list-title">
-            <h2>Sản phẩm mới</h2>
-          </div>
-  
-          <div class="row">
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/sofa-square-2.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/sofa-square-1.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">146,430,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-  
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/ghe-an-peak-mau-xanh-1.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/ghe-an-peak-mau-xanh-2.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">6,430,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-  
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/ban-an-peak-van-may-hien-dai-ceramic-1.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/ban-an-peak-hien-dai-van-may-ceramic-2.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">14,420,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-  
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/armchair-osaka-1.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/armchair-osaka-2.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">5,430,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-  
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/CONSOLE-TABLE-1jpg.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/CONSOLE-TABLE-2.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">12,430,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-  
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/BAN-BEN-RENEE-EP-1.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/BAN-BEN-RENEE-EP-2.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">4,430,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-  
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/BAN-BEN-FLAMINGO-1.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/BAN-BEN-FLAMINGO-2.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">4,430,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-  
-            <div class="col-12 col-sm-4 col-md-3">
-              <div class="wrap-product">
-                <a href="#">
-                  <img
-                    src="../images/ARMCHAIR-PEONY-FLOWER-1.jpg"
-                    class="product-img"
-                  />
-                  <img
-                    src="../images/ARMCHAIR-PEONY-FLOWER-2.jpg"
-                    class="product-img-alter"
-                  />
-                  <p class="name">Sofa Square Hight 3 Chỗ 3333 Da L2Z</p>
-                  <p class="price">146,430,000₫</p>
-                </a>
-  
-                <button class="add-to-cart">Thêm vào giỏ</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
     <!-- footer -->
     <div class="footer">
