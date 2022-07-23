@@ -197,16 +197,17 @@ body .container{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.5);;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    z-index: 99;
   }
 
   .sidebar a {
     padding: 8px 8px 8px 32px;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: white;
     display: block;
     transition: 0.3s;
   }
