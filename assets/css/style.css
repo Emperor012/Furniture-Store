@@ -167,6 +167,11 @@ body .container{
     align-items: center;
 }
 
+.header-main .container .row{
+    position: relative;
+
+}
+
 .header-main .wrap-menu-header{
     height: 90px;
     display: flex;
@@ -181,14 +186,15 @@ body .container{
     justify-content: center;
 }
 
+
 .wrap-menu-header .wrap-navbar-right ul li{
     display: none;
 }
 
 /* Header-main wrap-menu-header ./Start */
-.header-main .wrap-menu-header a{
+/* .header-main .wrap-menu-header a{
     margin:0 20px;
-}
+} */
 
 .sidebar {
     height: 100%;
@@ -205,8 +211,8 @@ body .container{
   }
 
   .sidebar a {
-    padding: 8px 8px 8px 32px;
-    font-size: 20px;
+    padding: 8px 8px 8px 16px;
+    font-size: 18px;
     color: white;
     display: block;
     transition: 0.3s;
@@ -219,7 +225,7 @@ body .container{
   .sidebar .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0;
     font-size: 36px;
     margin-left: 50px;
   } 
@@ -232,10 +238,65 @@ body .container{
     padding: 0px;
     border: none;
   }
+
+ .show-list-1 , .show-list-2 ,.show-list-3 ,
+ .show-list-4 , .show-list-5, .show-list-6 , .show-list-7{
+      display: none;
+  }
+
+  .show-list-1-show{
+      display: block;
+  }
+
+   .hide-class{
+       display: none;
+   }
+
+  .sidebar .nav-link{
+      color: white;
+  }
+
+  .sidebar li{
+      position: static;
+  }
+  .sidebar li a{
+      position: relative;
+  }
+  
+  .sidebar .dropdown-toggle::after {
+      display: none;
+  }
+
+  .sidebar .svg-inline--fa {
+    position: absolute;
+    right: 24px;
+    bottom: 12px;
+    font-size: 16px;
+    /* transform: translateY(-50%) rotate(-180deg); */
+
+  }
+
+  .sidebar ul li a{
+      padding-left: 60px;
+
+      font-size: 16px;
+  }
+
+  .sidebar a:hover{
+      color: #dd9933;
+  }
+
+  /* .sidebar li a:hover .sidebar .svg-inline--fa{
+    transform: translateY(-50%) rotate(-180deg);
+   } */
   
   #main {
     transition: margin-left .5s;
     padding: 16px;
+  }
+
+  .wrap-store-logo{
+      display: flex;
   }
   
 /* Header-main wrap-menu-header ./End */
@@ -246,6 +307,7 @@ body .container{
 .wrap-nav-header ul li{
     margin:0 6px;
 } 
+
 .wrap-nav-header ul li a{
     font-size: 15px;
     padding: 0px;
@@ -297,6 +359,96 @@ body .container{
 /* Header-main nav ./End */
 
 /* Header-main./End */
+
+.header-main ul li{
+    position: static;
+}
+
+.mega-box-submenu{
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+    z-index: 9;
+
+}   
+
+.header-main ul li:first-child:hover{
+    transition-duration: 2s;
+}
+
+.submenu-content {
+    padding: 25px 16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.submenu-content .row{
+    width: calc(12.5% - 16px);
+}
+
+.submenu-content .row:last-child{
+    width: calc(25% - 16px);
+}
+
+.submenu-content .row img{
+    width: 100%;
+    height: auto;
+    
+    object-fit: cover;    
+}
+
+.submenu-content ul li a{
+    font-size: 18px;
+    line-height: 28px;
+
+    padding: 6px 0;
+
+    color: #7777a0;
+    display: block;
+}
+
+.wrap-nav-header .room-submenu{
+    background-color: white;
+
+    position: absolute;
+    top: 90px;
+    line-height: 45px;
+
+    width: 180px;
+
+    z-index: 9;
+}
+
+.wrap-nav-header .room-submenu li a{
+    font-size: 18px;
+    line-height: 28px;
+
+    padding:10px 20px;
+}
+
+.header-main ul li:first-child:hover .mega-box-submenu,
+.header-main ul li:nth-child(2):hover  .room-submenu{
+    opacity: 1;
+    visibility: visible
+    
+}
+
+
+.header-main ul li:first-child:not(:hover) .mega-box-submenu
+,.header-main ul li:nth-child(2):not(:hover)  .room-submenu
+{
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.7s;
+    
+}
+
+
 /* #endregion */
 
 /* #region Banner.Start */
@@ -839,24 +991,36 @@ body .container{
 .living-menu-title{
     font-size: 15px;
     line-height: 24px;
-    margin: 28px;
+    
     display: flex;
     font-weight: bold;
+
+    padding: 0 20px;
+
+    border-left: 3px solid #fbaf1a;
 }
 
 .living-menu-items{
     margin: 24px;
-    width: 100%;
 }
 
 .living-menu-items ul li{
     padding: 4px;
 }
 
+.living-menu-items ul li:nth-child(3),
+.living-menu-items ul li:nth-child(7){
+    border-bottom: 1px solid #ddd;
+}
+
 .living-menu-items ul li a{
-    margin: 24px 0 24px 0px;
+    margin: 24px 3px;
     font-size: 15px;
     line-height: 24px;
+}
+
+.living-menu-items ul li a:hover{
+    color: #dd9933;
 }
 
 .wrap-room-type{
@@ -892,10 +1056,23 @@ body .container{
     font-size: 14px;
 }
 
-.room-type a button{
+.room-type .description-view{
     padding: 4px 8px;
     line-height: 24px;
     margin:0 12px 20px 12px;
+
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+
+.room-type .description-view:hover{
+    background-color: black;
+    color: white;
 }
 
 /* #endregion */
@@ -1245,6 +1422,7 @@ body .container{
     width: 46.5%;
     padding:12px 8px;
     text-transform: uppercase;
+    line-height: 28px;
 }
 
 .more-purchase{
