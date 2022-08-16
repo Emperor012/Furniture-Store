@@ -17,9 +17,18 @@
 
 
 @media screen and (max-width: 1200px){
-    .wrap-nav-header ul li{
-        padding-bottom: 12px;
+    /* menu-header */
+    .submenu-content .row img{
+        height: 160px;
     }
+    /* menu-header */
+    
+    .wrap-nav-header ul li a {
+        font-size: 13px;
+    }
+    /* .wrap-nav-header .nav-pills > li{
+        padding-bottom: 6px;
+    } */
 
     /* footer */
     .footer-email-signup input[type="text"]{
@@ -29,13 +38,26 @@
 
     
     .banner-living-room .box-promo-title {
-        top: 92%;
+        top: 60%;
+        height: auto;
+        left: 50%;
+    }
+
+    .banner-sofa-categoty .box-promo-title {
+        top: 60%;
         height: auto;
         left: 50%;
     }
 }
 
 @media screen and (max-width: 991px){
+
+    /* menu-header */
+    .submenu-content .row img{
+        height: 120px;
+    }
+    /* menu-header */
+
     .wrap-decorations .room-desc h2{
         font-size: 16px;
     }
@@ -81,20 +103,61 @@
     }
 
     /* sofa-category */
+
+    /* button add to cart */
+
+    .wrap-product .add-to-cart{
+        margin-bottom: 20px;
+        padding: 8px 8px;
+        margin: 24px;
+        border: 1px solid #000;
+        background-color: white;
+        display: none;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    /* button add to cart */
+
 }
 
 @media screen and (max-width: 899px){
+    /* menu-header */
+    .submenu-content .row img{
+        height: 120px;
+    }
+    /* menu-header */
+    
+
     /* banner */
     .banner-addition-1 .box-promo-title h1 {
         font-size: 3.4em;
-    }
+    }   
 
     
     .banner-living-room  .box-promo-title h1 {
+        font-size: 1.8em;
+        line-height: 1.8em;
+        /* margin-bottom: 300px; */
+    }
+
+    
+    .banner-sofa-categoty .box-promo-title h1{
         font-size: 2em;
+        line-height: 2em;
+        /* margin-bottom: 300px; */
     }
 
     /* banner */
+
+    /* .banner-addition-address */
+    .banner-addition-address .box-promo-title{
+        top: 70%;
+    }
+
+    /* .banner-addition-address */
+
 
     /* footer */
     /* input[type="text"]{
@@ -379,6 +442,57 @@
 }
 
 @media screen and (max-width: 575px){
+    /* index */
+    
+
+    .owl-carousel .owl-stage-outer{
+        height: 300px;
+    }
+
+    .box-content{
+        height: 300px;
+    }
+
+    .banner-common{
+        height: 300px;
+    }
+    
+    .box-content a{
+        font-size: 0.8em;
+        line-height: 0.8em;
+        padding: 12px;
+        text-decoration: none;
+        width: 160px;
+    }
+
+    .banner-addition-1 .box-promo-title h1 {
+        font-size: 1.6em;
+    }
+    
+    .banner-addition-1 .box-promo-title{
+        top:36%;
+    }
+
+    .banner-addition-2 .box-promo-title h1 {
+        font-size: 1.6em;
+    }
+
+    
+    .box-content .banner-addition-2 .box-promo-title-desc{
+        font-size: 0.8em;
+    }
+
+    .box-content p{
+        display: none;
+    }
+
+    .banner-addition-address .box-promo-title h1 {
+        font-size: 1.5em;
+    }
+    /* index */
+
+
+
     /* catalog by room */
     .living-room a {
         width: 100%;
@@ -405,5 +519,11 @@
         height:480px;
     }
     /* list-new-product  */
+}
+
+@media screen and (max-width: 575px){
+    .list-title{
+        display: block;
+    }
 }
 
