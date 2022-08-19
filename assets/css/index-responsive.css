@@ -439,6 +439,88 @@
     }
 
     /* sofa-category */
+
+    /* Cart discount-code */
+    
+    .wrap-cart-infos .cart-title {
+        font-size: 15px;
+    }
+
+    .wrap-cart-infos ,.wrap-cart-infos p{
+        font-size: 14px;
+    }
+    
+    .discount-code ,.discount-code button{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .wrap-cart-btn{
+        font-size: 14px;
+    }
+    /* Cart discount-code */
+
+    /* cart image container */
+    .cart-product-name h2{
+        font-size: 15px;
+    }
+
+    .products-in-cart{
+        display: block;
+    }
+
+    .products-in-cart .cart-product-img{
+        width: 50%;
+    }
+
+    .cart-product-info{
+        width: 80%;
+    }
+    /* cart image container */
+
+
+
+    /* cart quantity */
+    .cart-product-option{
+        display: block;
+    }
+
+    .cart-product-option .cart-product-quantity {
+        margin-top: 20px;
+    }
+    /* cart quantity */
+    
+    /* cart update btn*/
+    .update-cart-btn{
+        font-size: 14px;
+    }
+    /* cart update btn */
+
+    /* Payment */
+    .user-payment-contact , .user-payment-address{
+        display: block;
+    }
+
+    .user-payment-phone , .user-payment-email , .user-payment-province ,.user-payment-district{
+        width: 100%;
+    }
+
+    .user-payment-email , .user-payment-district{
+        margin-top: 20px;
+    }
+
+    .payment-mathod{
+        width: 100%;
+        display: block;
+    }
+
+    .method-bank , .method-upon-delevery{
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* Payment */
+
+
 }
 
 @media screen and (max-width: 575px){
@@ -519,11 +601,36 @@
         height:480px;
     }
     /* list-new-product  */
-}
-
-@media screen and (max-width: 575px){
+    
     .list-title{
         display: block;
     }
+    
 }
 
+@media screen and (max-width: 325px){
+    
+    .wrap-navbar-right{
+        display: none;
+    }
+    
+    .sidebar .nav-link{
+        
+        padding: 20px 0 20px 28px;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+    }
+
+    /* cart */
+    .wrap-cart-btn {
+        display: block;
+    }
+
+    .more-purchase, .purchasing {
+        width: 100%;
+        margin-top: 16px;
+    }
+    
+}
