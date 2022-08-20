@@ -1152,6 +1152,7 @@ body .container{
 }
 
 #page-category{
+    margin-top: 40px;
     display: flex;
 }
 
