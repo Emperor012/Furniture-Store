@@ -1151,6 +1151,20 @@ body .container{
     padding:12px 24px;
 }
 
+#page-category{
+    display: flex;
+}
+
+.pagination{
+    margin: auto;
+}
+
+.pagination .page-link{
+    color: black;
+    padding: 12px 16px;
+}
+
+
 .wrap-product .add-to-cart{
     margin-bottom: 20px;
     padding: 8px 12px;
@@ -1594,8 +1608,16 @@ body .container{
 
 .product-infos .more-info{
     width: 100%;
-    margin: 40px 8px 40px 8px;
+    margin: 40px 0px;
 }
+
+.product-infos .more-info li{
+    padding: 12px;
+}
+
+/* .product-infos .more-info li a{
+    padding: 12px 20px;
+} */
 
 .product-infos .more-info  .tab-content{
     margin-top: 40px;
@@ -1603,6 +1625,7 @@ body .container{
 
 .product-infos .product-rate{
     margin: 12px 0;
+    padding: 12px;
 }
 
 .product-rating{
@@ -2066,6 +2089,22 @@ body .container{
     text-transform: uppercase;
 }
 
+.back-to-cart{
+    margin-top: 20px;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.back-to-cart:hover{
+    background-color: gray;
+    color: white;
+}
+
+
 .user-payment-info label{
  width: 100%;
 }
@@ -2134,5 +2173,57 @@ body .container{
     padding: 12px 0;
     font-size: 14px;
     line-height: 20px;
+}
+
+.success-modal .modal-dialog{
+    height: auto !important;
+    background-color:transparent !important;
+    max-width: 400px;
+
+    margin: auto;
+}
+
+.success-modal .modal-dialog .modal-content{
+    margin: 72% auto;
+}
+
+.success-icon{
+    width: auto;
+    display: flex;
+}
+
+.success-icon .svg-inline--fa{
+    margin: auto;
+    font-size: 60px;
+    color: #4BB543;
+}
+.success-title{
+    font-size: 15px;
+    font-family: mont;
+}
+
+.success-txt{
+    color: #4BB543;
+    font-family: mont;
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.success-btn{
+    display: flex;
+}
+
+.success-to-home{
+    margin: auto;
+    padding: 12px 20px;
+
+    background-color: #EE8F2B;
+    color: white;
+    border: none;
+
+    font-size: 15px;
 }
 /* #endregion */

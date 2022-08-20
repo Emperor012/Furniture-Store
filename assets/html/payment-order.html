@@ -689,19 +689,19 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">BỘ SƯU TẬP</a>
+                  <a class="nav-link" href="../html/living-room.html">BỘ SƯU TẬP</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">THIẾT KẾ NỘI THẤT</a>
+                  <a class="nav-link" href="../html/living-room.html">THIẾT KẾ NỘI THẤT</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">SHOWROOM ẢO</a>
+                  <a class="nav-link" href="../html/living-room.html">SHOWROOM ẢO</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">GÓC CẢM HỨNG</a>
+                  <a class="nav-link" href="../html/living-room.html">GÓC CẢM HỨNG</a>
                 </li>
               </ul>
             </div>
@@ -967,7 +967,42 @@
                   </label>
                 </div>
   
-                <button class="payment-purchasing">Đặt mua</button>
+                <button class="payment-purchasing" data-bs-toggle="modal" data-bs-target="#success-modal">Đặt mua</button>
+
+                <button class="back-to-cart" onclick="goToCart()">Quay lại giỏ hàng</button>
+
+              </div>
+
+            <!-- The Modal -->
+            <div class="modal success-modal" id="success-modal">
+              <div class="modal-dialog success-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <p class="success-title">Thông báo</p>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal">
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div id="success-icon" class="success-icon">
+                      <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+                    
+                    <p class="success-txt">
+                      ĐẶT MUA THÀNH CÔNG
+                    </p>
+
+                    <div class="success-btn">
+                      <button class="success-to-home" onclick="goToHome()">Về trang chủ</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

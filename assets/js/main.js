@@ -342,6 +342,11 @@ function goToCate(){
   location.href = "../html/sofa-catagory.html";
 }
 
+
+function goToHome(){
+  location.href = "../../index.html";
+}
+
 function payment(){
   location.href = "../html/payment-order.html";
 }
