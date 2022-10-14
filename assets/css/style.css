@@ -340,7 +340,7 @@ body .container{
 
   .sidebarModal .svg-inline--fa {
     position: absolute;
-    right: 24px;
+    right: 26px;
     font-size: 12px;
     /* transform: translateY(-50%) rotate(-180deg); */
 
@@ -940,6 +940,7 @@ body .container{
 {    
     color: #A9A9B2;
     font-size: 14px;
+    line-height: 20px;
     text-transform: uppercase;
 }
 
@@ -1662,7 +1663,7 @@ body .container{
 .wrap-cart-title span{
     font-size: 15px;
     background-color: red;
-    padding: 0px 6px 0px 6px;
+    padding: 2px 6px 2px 6px;
     margin-bottom: 3px;
     color: white;
     border-radius: 99px;

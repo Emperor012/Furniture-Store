@@ -331,15 +331,15 @@ function goToCartIndex(){
 }
 
 function goToPayment(){
-  location.href = "../html/cart.html";
+  location.href = "../html/payment-order.html";
 }
 
 function goToPaymentIndex(){
-  location.href = "assets/html/cart.html";
+  location.href = "assets/html/payment-order.html";
 }
 
 function goToCate(){
-  location.href = "../html/sofa-catagory.html";
+  location.href = "../../index.html";
 }
 
 

@@ -608,6 +608,16 @@
     
 }
 
+@media screen and (max-width: 475px){
+    .wrap-product{
+        height:400px;
+    }
+
+    .pagination .page-link{
+        padding: 8px;
+    }
+}
+
 @media screen and (max-width: 325px){
     
     .wrap-navbar-right{
@@ -628,9 +638,28 @@
         display: block;
     }
 
+    .catalog-by-room .decorations .box-promo-title h2 , 
+    .catalog-by-room .decorations .box-promo-title a {
+        font-size: 12px;
+    }
+
+    .box-promo-title p {
+        display: none;
+    }
+
     .more-purchase, .purchasing {
         width: 100%;
         margin-top: 16px;
+    }
+
+    
+    .wrap-product{
+        height:340px;
+    }
+
+    
+    .pagination .page-link{
+        padding: 5px;
     }
     
 }
